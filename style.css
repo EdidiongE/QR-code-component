@@ -1,0 +1,111 @@
+:root {
+  --primary-clr-100: hsl(0, 0%, 100%);
+  --primary-clr-500: hsl(212, 45%, 89%);
+  --secondary-clr-100: hsl(220, 15%, 55%);
+  --secondary-clr-400: hsl(218, 44%, 22%);
+
+  --ff: "Outfit", sans-serif;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.body {
+  background-color: var(--primary-clr-500);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+.qr-code__article {
+  margin: 0 auto;
+  justify-content: center;
+  border-radius: 1rem;
+  width: 21rem;
+  background-color: var(--primary-clr-100);
+  font-family: var(--ff);
+  padding: 1rem;
+}
+.qr-code__image {
+  width: 19rem;
+  border-radius: 1rem;
+}
+.qr-code__content {
+  padding: 1rem;
+}
+.qr-code__title {
+  text-align: center;
+  color: var(--secondary-clr-400);
+  font-weight: 700;
+}
+.qr-code__text {
+  font-size: 1rem;
+  color: var(--secondary-clr-100);
+  font-weight: 400;
+  padding-top: 1rem;
+  text-align: center;
+}
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  font-family: var(--ff);
+  color: var(--secondary-clr-400);
+  place-content: bottom;
+}
